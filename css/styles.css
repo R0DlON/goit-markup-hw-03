@@ -1,0 +1,219 @@
+/* Основной цвет при наведении на ссылку/кнопку #2196F3 */
+/* Основной цвет текста навигации и заголовков #212121 */
+/* Цвет на текста героя+нижний лого #FFFFFF */
+/* Цвет обычного текста в секции #757575 */
+/* Основной цвет заднего фона #FFFFFF */
+/* Цвет заднего фона Hero#2F303A */
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-text-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --accent-color: #18a0fb;
+  --primary-white-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --third-background-color: #f5f4fa;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+li {
+  list-style-type: none;
+}
+
+/* Logo */
+.header-list-logo-part,
+.footer-logo-part {
+  color: var(--accent-color);
+}
+.header-list-logo {
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  color: var(--primary-text-color);
+}
+
+.header-list-logo:focus,
+.header-list-logo:hover {
+  color: var(--accent-color);
+}
+
+.footer-logo:focus,
+.footer-logo:hover {
+  color: var(--accent-color);
+}
+
+/* Site-nav */
+.nav-list-link.current,
+.auth-list-link.current {
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+.nav-list-link {
+  font-weight: 500;
+  color: var(--primary-text-color);
+}
+.nav-list-link:focus,
+.nav-list-link:hover {
+  color: var(--accent-color);
+}
+
+.auth-list-link {
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
+
+.auth-list-link:focus,
+.auth-list-link:hover {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero-section {
+  background-color: var(--secondary-background-color);
+}
+
+.hero-section-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  text-align: center;
+}
+.hero-section-button {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  text-align: center;
+}
+
+/* Features */
+.features-list-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.features-list-text {
+  line-height: 1.7;
+  color: var(--secondary-text-color);
+}
+
+/* What we do */
+.wwd-title,
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* Our Team */
+.footer-list-part-logo.right {
+  color: var(--white-text-color);
+}
+.footer-list-part-logo.right:focus,
+.footer-list-part-logo.right:hover {
+  color: var(--accent-color);
+}
+
+.section {
+  background-color: var(--third-background-color);
+}
+
+.our-team-title {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+.our-team-text {
+  font-size: 16px;
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--secondary-background-color);
+}
+
+.footer-logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  color: var(--white-text-color);
+  text-decoration: none;
+}
+.address-list-item {
+  font-style: normal;
+  line-height: 1.7;
+  color: var(--white-text-color);
+}
+
+.address-list-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--footer-text-color);
+}
+.address-list-link:focus,
+.address-list-link:hover {
+  color: var(--accent-color);
+}
+
+/* PORTFOLIO */
+/* Фильтр */
+.filter-list-button.current {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  text-align: center;
+}
+.filter-list-button.current:hover,
+.filter-list-button.current:focus {
+  color: var(--white-text-color);
+}
+.filter-list-button {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+.filter-list-button:hover,
+.filter-list-button:focus {
+  color: var(--white-text-color);
+}
+
+/* Проекты */
+.project-list-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+.project-list-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--secondary-text-color);
+}
