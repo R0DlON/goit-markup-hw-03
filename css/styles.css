@@ -52,8 +52,7 @@ li {
 }
 
 /* Site-nav */
-.nav-list-link.current,
-.auth-list-link.current {
+.nav-list-link.current {
   font-weight: 500;
   color: var(--accent-color);
 }
