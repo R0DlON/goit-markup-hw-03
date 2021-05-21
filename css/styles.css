@@ -17,10 +17,6 @@
 }
 
 body {
-  width: 1200px;
-  margin-right: 15px;
-  margin-left: 15px;
-
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.2;
@@ -51,7 +47,7 @@ p {
 /* Header */
 .container {
   width: 1200px;
-
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
 }
@@ -226,6 +222,9 @@ p {
 .wwd-list {
   display: flex;
 }
+.wwd-list-item {
+  margin-right: 30px;
+}
 
 .wwd-list-item:last-child {
   margin-right: 0;
@@ -265,6 +264,7 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
+  max-width: 1600px;
 }
 .container.footer {
   align-items: flex-start;
