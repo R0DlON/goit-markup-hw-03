@@ -15,42 +15,44 @@
   <body>
     <!--Верхняя линия-->
     <header class="header-list">
-      <a href="" class="header-list-logo"
-        ><span class="header-list-logo-part">Web</span>Studio</a
-      >
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-list-item">
-            <a href="./index.html" class="nav-list-link link">Студия</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="./portfolio.html" class="nav-list-link link current"
-              >Портфолио</a
+      <div class="container">
+        <a href="" class="header-list-logo"
+          ><span class="header-list-logo-part">Web</span>Studio</a
+        >
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="./index.html" class="nav-list-link link">Студия</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./portfolio.html" class="nav-list-link link current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="" class="nav-list-link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="auth-list">
+          <li class="auth-list-item">
+            <a href="mailto:info@devstudio.com" class="auth-list-link link"
+              >info@devstudio.com</a
             >
           </li>
-          <li class="nav-list-item">
-            <a href="" class="nav-list-link link">Контакты</a>
+          <li class="auth-list-item">
+            <a href="tel:380961111111" class="auth-list-link link">
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="auth-list">
-        <li class="auth-list-item">
-          <a href="mailto:info@devstudio.com" class="auth-list-link link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="auth-list-item">
-          <a href="tel:380961111111" class="auth-list-link link">
-            +38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <!-- Main  part -->
     <main>
       <!-- Фильтр -->
-      <section>
-        <h1>Портфолио</h1>
+      <section class="portfolio-section">
+        <h1 class="title-hide">Портфолио</h1>
         <ul class="filter-list">
           <li class="filter-list-item">
             <button type="button" class="filter-list-button current">
@@ -78,6 +80,7 @@
                 src="./Images/portfolio1.jpg"
                 alt="View Tekhnokryak"
                 width="370"
+                class="project-list-img"
               />
               <h2 class="project-list-title">Технокряк</h2>
               <p class="project-list-text">Веб-сайт</p>
@@ -178,26 +181,28 @@
     </main>
     <!--Подвал-->
     <footer class="footer">
-      <a href="" class="footer-logo"
-        ><span class="footer-logo-part">Web</span>Studio
-      </a>
-      <address>
-        <ul class="address-list">
-          <li class="address-list-item">
-            <p class="address-list-text">г. Киев, пр-т Леси Украинки, 26</p>
-          </li>
-          <li class="address-list-item">
-            <a href="mailto:info@example.com" class="address-list-link link"
-              >info@example.com</a
-            >
-          </li>
-          <li class="address-list-item">
-            <a href="tel:380991111111" class="address-list-link link"
-              >+38 099 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container footer">
+        <a href="" class="footer-logo"
+          ><span class="footer-logo-part">Web</span>Studio
+        </a>
+        <address class="address">
+          <ul class="address-list">
+            <li class="address-list-item">
+              <p class="address-list-text">г. Киев, пр-т Леси Украинки, 26</p>
+            </li>
+            <li class="address-list-item">
+              <a href="mailto:info@example.com" class="address-list-link link"
+                >info@example.com</a
+              >
+            </li>
+            <li class="address-list-item">
+              <a href="tel:380991111111" class="address-list-link link"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
