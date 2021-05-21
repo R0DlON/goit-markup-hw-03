@@ -354,6 +354,7 @@ p {
   color: var(--white-text-color);
 }
 .filter-list-button {
+  padding: 6px 22px;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
