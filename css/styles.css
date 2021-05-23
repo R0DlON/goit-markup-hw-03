@@ -41,29 +41,43 @@ p {
   margin: 0;
   padding: 0;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .title-hide {
   display: none;
 }
 /* Header */
 .container {
   width: 1200px;
-  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.flex-container {
   display: flex;
-  align-items: center;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* Logo */
 
-.header-list {
-  display: flex;
-  align-items: center;
-  height: 79px;
+.header {
+  height: 80px;
   border-bottom: 1px solid #ececec;
 }
 .header-list-logo-part,
 .footer-logo-part {
   color: var(--accent-color);
 }
-.header-list-logo {
+.header-logo {
   margin-right: 90px;
 
   text-decoration: none;
@@ -129,19 +143,21 @@ p {
 }
 
 /* Hero */
-.hero-section {
-  background-color: var(--secondary-background-color);
-  max-width: 1600px;
-}
+
 .hero {
   height: 600px;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
-}
-.hero-section-title {
-  margin-top: 200px;
-  margin-left: auto;
+  background-color: var(--secondary-background-color);
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-right: auto;
+  margin-left: auto;
+}
 
+.hero-title {
   width: 696px;
   text-align: center;
   font-weight: 900;
@@ -231,20 +247,24 @@ p {
 }
 
 /* Our Team */
-.our-team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
+.team {
   background-color: var(--third-background-color);
-  max-width: 1600px;
 }
 
 .our-team {
   display: flex;
 }
-.our-team-image {
-  margin-bottom: 30px;
+
+.our-team-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-box {
+  background-color: #ffffff;
+  padding: 30px 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-title {
@@ -378,12 +398,13 @@ p {
 
 /* Проекты */
 .project-list {
+  margin: -30px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .project-list-item {
-  margin-right: 30px;
+  margin: 15px;
 }
 
 .project-list-img {
