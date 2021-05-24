@@ -26,7 +26,7 @@
         <a href="" class="header-logo link"
           ><span class="header-list-logo-part">Web</span>Studio</a
         >
-        <nav>
+        <nav class="nav">
           <ul class="nav-list">
             <li class="nav-list-item">
               <a href="./index.html" class="nav-list-link current link"
@@ -62,10 +62,10 @@
       <!--Шапка/Герой-->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-section-button">
-            Заказать услугу
-          </button>
+          <h1 class="hero-title">
+            Эффективные решения <br />для вашего бизнеса
+          </h1>
+          <button type="button" class="hero-button">Заказать услугу</button>
         </div>
       </section>
       <!--Особенности-->
@@ -75,7 +75,7 @@
         <div class="container">
           <ul class="features-list">
             <li class="features-list-item">
-              <h3 class="features--list-title">Внимание к деталям</h3>
+              <h3 class="features-list-title">Внимание к деталям</h3>
               <p class="features-list-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
@@ -107,10 +107,8 @@
       </section>
       <!--Чем мы занимаемся-->
       <section class="wwd-section">
-        <div class="container wwd-title">
-          <h2 class="section-title">Чем мы занимаемся</h2>
-        </div>
         <div class="container">
+          <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="wwd-list">
             <li class="wwd-list-item">
               <img
@@ -145,30 +143,35 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="our-team">
             <li class="our-team-item">
-              <img
-                src="./Images/Worker1.jpg"
-                alt="Фото Игоря Демьяненко"
-                width="270"
-              />
               <div class="team-box">
+                <img
+                  src="./Images/Worker1.jpg"
+                  alt="Фото Игоря Демьяненко"
+                  width="270"
+                  class="our-team-photo"
+                />
                 <h3 class="our-team-title">Игорь Демьяненко</h3>
                 <p class="our-team-text">Product Designer</p>
               </div>
             </li>
             <li class="our-team-item">
-              <img
-                src="./Images/Worker2.jpg"
-                alt="Фото Ольги Репиной"
-                width="270"
-              />
-              <h3 class="our-team-title">Ольга Репина</h3>
-              <p class="our-team-text">Frontend Developer</p>
+              <div class="team-box">
+                <img
+                  src="./Images/Worker2.jpg"
+                  alt="Фото Ольги Репиной"
+                  width="270"
+                  class="our-team-photo"
+                />
+                <h3 class="our-team-title">Ольга Репина</h3>
+                <p class="our-team-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="our-team-item">
               <img
                 src="./Images/Worker3.jpg"
                 alt="Фото Николая Тарасова"
                 width="270"
+                class="our-team-photo"
               />
               <h3 class="our-team-title">Николай Тарасов</h3>
               <p class="our-team-text">Marketing</p>
@@ -178,6 +181,7 @@
                 src="./Images/Worker4.jpg"
                 alt="Фото Михаила Ермакова"
                 width="270"
+                class="our-team-photo"
               />
               <h3 class="our-team-title">Михаил Ермаков</h3>
               <p class="our-team-text">UI Designer</p>
